@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Inscription</title>
+	<link rel="stylesheet" type="text/css" href="tyles/style.css">
+</head>
+<body>
+	<h2>Formulaire d'inscription</h2>
+	<form action="authentification.html" method="get">
+		<table>
+			<tr>
+			<td><label for="nom">Nom :</label></td>
+			<td><input type="text" id="nom" name="nom" placeholder="Nom"></td>
+		</tr>
+		<tr>
+			<td><label for="Postnom">Postnom :</td></label>
+			<td><input type="text" id="Postnom" name="Postnom" placeholder="Postnom"></td>
+		</tr>
+		<tr>
+			<td><label for="Prénom">Prénom :</td></label>
+			<td><input type="text" id="Prénom" name="Prénom"placeholder="Prénom"></td>
+		</tr>
+		<tr>
+			<td><label for="Genre">Genre :</td></label>
+			<td>
+			<select id="genre" name="genre" required>
+				<option value="">Choisir</option>
+				<option value="m">M</option>
+				<option value="f">F</option>
+			</select>
+			</td>
+		</tr>
+		<tr>
+			<td><label for="Téléphone">Téléphone :</td></label>
+			<td><input type="text" id="Téléphone" name="Téléphone"placeholder="Téléphone"></td>
+		</tr>
+		<tr>
+			<td><label for="email">E-mail :</td></label>
+			<td><input type="email" id="email" name="e-mail"placeholder="Adresse e-mail" required></td>
+		</tr>
+		<tr>
+			<td><label for="password">Nouveau mot de passe :</td></label>
+			<td><input type="password" id="mot de passe" name="mot de passe" placeholder="Mot de passe"></td>
+		</tr>
+		<tr>
+			<td><label for="password">Confirmer le mot de passe :</td></label>
+			<td><input type="password" id="mot de passe" name="Confirm" placeholder="Confirmer le mot de passe"></td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center">
+				<input type="submit" value="S'enregistrer">
+				<input type="reset" value="Annuler">
+			</td>
+		</tr>
+		</table>	
+	</form>
+</body>
+</html>

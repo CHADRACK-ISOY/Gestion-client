@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html fr>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<title>Authentification</title>
+	<script>
+		function verifierConnexion(event) {
+			event.preventDefault();
+			const email = document.getElementById('e-mail').value;
+			const mdp = document.getElementById('mdp').value;
+
+			if (! email || !mdp) {
+				alert("Veuillez entrer votre adresse e-mail et mot de passe.");
+			} else if (email === "client@hotel.com" && mdp === "12345") {
+				alert("Félicitation ! vous êtes connecté !");
+			} else{
+				alert("adresse e-mail ou mot de passe incorrect.");
+				}
+			}
+	</script>
+</head>
+<body>
+	<h2 class="titre-centre">Connexion</h2>
+<form onsubmit="verifierConnexion(event)">
+	<table>
+		<tr>
+			<td><label for="email">E-mail :</label></td>
+			<td><input type="email" id="email" placeholder="Entrer votre adresse e-mail" required></td>
+		</tr>
+		<tr>
+			<td><label for="password">Mot de passe :</label></td>
+			<td><input type="password" id="password" placeholder="Entrer votre mot de passe" required></td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center">
+				<input type="submit" value="Se connecter">
+			</td>
+		</tr>
+	</table>
+</form>
+<p id = "message"></p>
+</body>
+</html>
